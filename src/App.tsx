@@ -1,9 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Page } from "./Page";
+
 export function App() {
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-      WELCOME, SGM!
-    </div>
+    
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page/>}>
+
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 
