@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Page } from "./Page";
+import { AppLayout } from "./components/layout/app-layout";
 
 export function App() {
 
@@ -7,7 +7,7 @@ export function App() {
     
     <Router>
       <Routes>
-        <Route path="/" element={<Page/>}>
+        <Route path="/" element={<AppLayout/>}>
 
         </Route>
       </Routes>
